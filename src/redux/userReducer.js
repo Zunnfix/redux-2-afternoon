@@ -4,7 +4,7 @@ const initialState = {
   email: null,
   firstName: null,
   lastName: null
-};
+}
 
 const REQUEST_USER_DATA = 'REQUEST_USER_DATA'
 
@@ -20,7 +20,11 @@ export default function (state = initialState, action) {
   switch (action.type) {
     case `${REQUEST_USER_DATA} _FULFILLED`:
       const { email, firstName, lastName } = action.payload.user
-      return { email, firstName, lastName };
+      return { 
+        email,
+        firstName, 
+        lastName 
+      }
     default:
       return state;
   }

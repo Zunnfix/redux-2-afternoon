@@ -23,7 +23,7 @@ export const addPurchase = (price, description, category) => {
     description,
     price,
     category
-  }).then(res => res.data);
+  }).then(res => res.data)
   return {
     type: ADD_PURCHASE,
     payload: data

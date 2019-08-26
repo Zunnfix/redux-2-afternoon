@@ -14,7 +14,7 @@ app.use(session({
   saveUninitialized: false
 }))
 
-// ==== REMOVE!!!! ====
+// === REMOVE!!!! ======
 // const userData = require('./userData')
 // app.use((req, res, next) => {
 //   req.session.user = userData;
